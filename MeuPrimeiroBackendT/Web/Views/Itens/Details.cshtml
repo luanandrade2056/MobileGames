@@ -1,0 +1,58 @@
+﻿@model Web.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model._TipoItem.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._TipoItem.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qualidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qualidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DanoBase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanoBase)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
